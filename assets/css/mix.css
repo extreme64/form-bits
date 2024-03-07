@@ -1,0 +1,104 @@
+/* TODO: Color var. to be pulled from theme */
+:root{
+    --primary-color:#d65959;
+    --contrast-color: #EFE7DA;
+}
+
+.wpcf7-list-item svg,
+.mc4wp-form svg ,
+.svg-cb:has(+ input){
+    display: inline;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 4px;
+    fill: var(--primary-color);
+    background-color: transparent;
+}
+.mc4wp-form path.cb-box,
+.mc4wp-form path.rb-sel,
+.mc4wp-form path.rb-unsel {
+    /* needed for check sign not to impede the clicking experience, if click on the box [!!! type is null !!!] */
+    pointer-events: none; 
+}
+.mc4wp-form  path.cb-check,
+.wpcf7-checkbox path.cb-check{
+    /* needed for check sign not to impede the clicking experience, if click on the check [!!! type is null !!!] */
+    pointer-events: none; 
+}
+.mc4wp-form  path.show-svg {
+    display: inline;
+}
+/*TODO:  limit this to, needs to work in contact page too */
+path.hide-svg,
+input[type="radio"] {
+    display: none;  
+}
+
+
+form.mc4wp-form.mc4wp-form label > span {
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+.wpcf7-list-item input[type='checkbox'],
+.mc4wp-checkbox-contact-form-7 input[type='checkbox']{
+    /* we have SVG in place,
+    so we do not need input element */
+    display: none;
+}
+
+
+/* Sub style */
+.mc4wp-subscribe {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mc4wp-subscribe p {
+    margin: initial;
+}
+
+.subscribe__email {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.subscribe__actions {
+    /* Styles for the actions div */
+    display: flex;
+    justify-content: space-between;
+    /* Add more styles as needed */
+}
+
+.subscribe__actions label {
+    flex: auto;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.subscribe__submit,
+.wpcf7-form-control[type="submit"] {
+    min-height: 48px;
+    padding: 10px 20px;
+    color: var(--contrast-color, #ffffff);
+    background-color: var(--primary-color,#007bff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* CF7 styling */
+.wpcf7-form {
+    display: flex;
+    flex-direction: column;
+}
+.wpcf7-form-control-wrap {
+    display: flex;
+}
+.wpcf7-form-control-wrap > .wpcf7-form-control {
+    width: 100%;
+}
