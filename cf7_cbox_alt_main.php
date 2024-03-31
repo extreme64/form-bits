@@ -3,11 +3,11 @@
 namespace Cf7CboxAlt;
 
 /*
-Plugin Name: Contact Form 7 Checkbox SVG
+Plugin Name: Form Bits
 Plugin URI: 
-Description: Change "Contact Form 7" checkbox UI with SVG icons
+Description: Form bits and additions.
 Text Domain: cf7-cbox-alt
-Version: 1.0
+Version: 2.0
 Author: MastG
 Author URI: https://forwardcreating.com/
 */
