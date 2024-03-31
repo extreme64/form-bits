@@ -1,2 +1,5 @@
 node_modules/*
 sync--absolute-sustainability.bat
+gulpfile.js
+package-lock.json
+package.json
