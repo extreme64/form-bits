@@ -4,6 +4,17 @@
     --contrast-color: #EFE7DA;
 }
 
+.mc4wp-form-fields{
+	max-width: 50%;
+	margin: auto;	
+}
+@media (max-width: 781px) { 
+	.mc4wp-form-fields{
+		max-width: 100%;
+        margin: auto;	
+	}
+}
+
 .wpcf7-list-item svg,
 .mc4wp-form svg ,
 .svg-cb:has(+ input){
