@@ -52,7 +52,7 @@ form.mc4wp-form.mc4wp-form label > span {
 
 /* Sub style */
 .mc4wp-subscribe {
-    display: block;
+    display: flex;
     margin-bottom: 20px;
 }
 
